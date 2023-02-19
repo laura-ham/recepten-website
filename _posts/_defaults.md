@@ -1,0 +1,16 @@
+---
+title:
+categories:
+date:
+featured_image:
+recipe:
+  servings:
+  prep:
+  cook:
+  fridge:
+  ingredients_markdown:
+  tools_markdown:
+  directions_markdown:
+  intro_markdown:
+  tips_markdown:
+---

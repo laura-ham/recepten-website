@@ -1,0 +1,84 @@
+---
+layout: default
+---
+<article class="post">
+	{% include post-heading.html post=page post_page=true %}
+	<div class="image">
+		<img src="{{ page.featured_image }}" alt="{{ page.title }}">
+	</div>
+
+	<div class="recipe-intro">
+		{{ page.recipe.intro_markdown | markdownify }}
+	</div>
+
+	<ul id="recipe" class="recipe-overview">
+		<li title="Servings">{% include recipe-icon.html icon="quantity" %}<span>{{ page.recipe.servings }}</span></li>
+		<li title="Prep Time">{% include recipe-icon.html icon="time" %}<span>{{ page.recipe.prep }}</span></li>
+		<li title="Cook Time">{% if page.recipe.cook %}{% include recipe-icon.html icon="cook" %}<span>{{ page.recipe.cook }}{% endif %}</span></li>
+		<li title="Fridge Time">{% if page.recipe.fridge %}{% include recipe-icon.html icon="fridge" %}<span>{{ page.recipe.fridge }}</span>{% endif %}</li>
+	</ul>
+
+	<div class="recipe-contents">
+		<div class="ingredients">
+			<h2>Ingrediënten</h2>
+			{{ page.recipe.ingredients_markdown | markdownify }}
+
+			<h2>Tools</h2>
+			{{ page.recipe.tools_markdown | markdownify }}
+		</div>
+
+		<div class="directions">
+			<h2>Instructies</h2>
+			{{ page.recipe.directions_markdown | markdownify }}
+		</div>
+	</div>
+
+	<div class="recipe-tips">
+		<h2>Tips & notities</h2>
+		{{ page.recipe.tips_markdown | markdownify }}
+	</div>
+
+	<div class="recipe-body">
+		{{ content }}
+	</div>
+
+	{% include carousel.html height="50" unit="%" number="1" %}
+
+	<div class="cta">
+		<h2>Meer heerlijke recepten</h2>
+		<p>Dit is een van de vele lekkere recepten op deze website.</p>
+		<div class="button"><a href="{{ site.baseurl }}/recepten">Klik hier voor meer recepten</a></div>
+	</div>
+	{% if site.disqus_shortname and page.comments %}
+		<div id="disqus_thread"></div>
+		<script>
+			var disqus_shortname = '{{ site.disqus_shortname }}';
+			var disqus_config = function () {
+				this.page.url = "{{ page.url | prepend: site.url }}";
+				this.page.identifier = "{{ page.id }}";
+			};
+			(function() {  // DON'T EDIT BELOW THIS LINE
+				var d = document, s = d.createElement('script');
+				s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+	{% endif %}
+</article>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+	$(function() {
+		$('.post img').imgPin();
+
+		$('a[href*=\\#]').on('click', function(event){
+			var el = $(this.hash);
+			if (el.length > 0) {
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top - 50}, 500);
+			}
+		});
+	});
+</script>

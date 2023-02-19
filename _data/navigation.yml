@@ -1,0 +1,6 @@
+- name: Home
+  link: /
+- name: Over mij
+  link: /about/
+- name: Recepten
+  link: /recepten/
