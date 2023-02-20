@@ -14,6 +14,8 @@
 - [x] tabel opmaak voor voedingswaarden. 
 - [ ] voedingswaarden een plek geven in de opmaak. 
 - [ ] https://lukasmurdock.com/recipe-site-with-jekyll/
+- [ ] ander logo
+- [ ] logo positie links bovenin 
 
 
 # Slider/carousel pictures
