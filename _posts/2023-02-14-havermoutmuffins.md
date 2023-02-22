@@ -33,13 +33,13 @@ recipe:
     5. Schenk het beslag eventueel over in een kom. Doe er vervolgens de walnoten en rozijnen bij, en roer door. 
     6. Verdeel het beslag over de muffinvormpjes. Dit gaat heel makkelijk met een ijsschep. 
     7. Leg de appelstukjes bovenop het beslag in de vormpjes, en druk het een beetje aan. 
-    8. Bak de muffins af op 190 &deg;C voor 25-30 minuten. Check of ze gaar zijn met een sateprikker, en bak ze zo nodig nog wat langer. 
+    8. Bak de muffins af op 190 &deg;C voor 40-50 minuten. Check of ze gaar zijn met een sateprikker, en bak ze zo nodig nog wat langer. 
   tips_markdown: |-
     * Als je een fijn beslag wilt hebben voor de muffins, kan je (een deel) havermeel gebruiken in plaats van havermoutvlokken. Havermeel is vaak te koop bij de molen, maar je kan zelf ook eenvoudig havermeel maken door de havervlokken even in de blender te doen. Ik maak zelf altijd een grotere hoeveelheid havermeel van havervlokken, en bewaar dit voor langere tijd. Zo hoef ik niet steeds opnieuw de blender te pakken. 
 
-# carousels:
-#   - images: 
-#     - image: /images/author-2.jpg
-#     - image: /images/author-icon.jpg
+carousels:
+  - images: 
+    - image: /images/recepten/havermoutmuffins-1.jpg
+    - image: /images/recepten/havermoutmuffins-2.jpg
 ---
 

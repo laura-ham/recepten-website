@@ -3,7 +3,7 @@ title: Granolarepen
 categories: 
   - Gezond & Sportvoeding
 date: 2023-02-17
-featured_image: /images/granolarepen.jpg
+featured_image: /images/recepten/granolarepen.jpg
 recipe:
   servings: 12 repen
   prep: 10 minuten

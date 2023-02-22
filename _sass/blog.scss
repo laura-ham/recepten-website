@@ -51,7 +51,7 @@
 
 				&:before {
 					content: '\00bb';
-					color: #ff4e4e;
+					color: #5c8d89;
 					padding-right: 0.5em;
 					position: absolute;
 					left: -32px;
@@ -73,7 +73,7 @@
 				&:before {
 					content: counter(step-counter);
 					margin-right: 0px;
-					background-color: #ff4e4e;
+					background-color: #5c8d89;
 					color: white;
 					/* padding: 1px 7px; */
 					font-size: .7em;

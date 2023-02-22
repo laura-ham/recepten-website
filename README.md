@@ -16,6 +16,8 @@
 - [ ] https://lukasmurdock.com/recipe-site-with-jekyll/
 - [ ] ander logo
 - [ ] logo positie links bovenin 
+- [ ] wanneer smaller scherm dan wordt alles onder elkaar geplaatst, maar dan is de ingrediëntenlijst te smal
+- [ ] nav bar als het te smal scherm wordt dan een hamburger menu worden zodat het logo niet over de namen gaat. OF eerst het logo erboven laten zien.
 
 
 # Slider/carousel pictures

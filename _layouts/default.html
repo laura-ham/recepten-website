@@ -25,13 +25,14 @@
 		{% endif %}
 	</head>
 	<body>
-		{% include navigation.html %}
 		
-		<!-- <header>
-			<a href="{{site.baseurl }}/">
+		
+		<header>
+			<!-- <a href="{{site.baseurl }}/">
 				<img src="{{ site.baseurl }}{{ site.data.company_details.logo_image }}" width="360" alt="logo">
-			</a>
-		</header> -->
+			</a> -->
+			{% include navigation.html %}
+		</header>
 			
 		<div class="container main-content">
 			<section class="content">{{ content }}</section>
