@@ -27,7 +27,7 @@ jobs:
     - name: Upload site to FTP.
       env: 
         ftp_location: ${{ secrets.FTP_LOCATION }}
-        ftp_username: ${{ secrets.FTP_USERNAME }}
+        ftp_username: www-ftp-user
         ftp_password: ${{ secrets.FTP_PASSWORD }}
         ftp_folder: ${{ secrets.FTP_FOLDER }}
       run: |
