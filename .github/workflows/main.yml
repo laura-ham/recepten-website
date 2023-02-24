@@ -25,9 +25,9 @@ jobs:
     # Looks kind of complicated but just uploads the content of _site folder to the ftp server. It does not upload the _site folder itself.
     - name: Upload site to FTP.
       env: 
-        ftp_location: $ bakeityourself.nl
+        ftp_location: bakeityourself.nl
         ftp_username: ${{ secrets.FTP_USERNAME }}
         ftp_password: ${{ secrets.FTP_PASSWORD }}
-        ftp_folder: $ /bakeityourself.nl
+        ftp_folder: /bakeityourself.nl
       run: |
         ncftpput -R -v -u "$ftp_username" -p "$ftp_password" $ftp_location $ftp_folder _site/* 
