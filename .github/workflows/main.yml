@@ -27,8 +27,8 @@ jobs:
     - name: Upload site to FTP.
       env: 
         ftp_location: ${{ secrets.FTP_LOCATION }}
-        ftp-user: ${{ secrets.FTP_USERNAME }}
-        ftp_pass: ${{ secrets.FTP_PASSWORD }}
+        ftp_username: ${{ secrets.FTP_USERNAME }}
+        ftp_password: ${{ secrets.FTP_PASSWORD }}
         ftp_folder: /bakeityourself.nl
       run: |
-        ncftpput -R -v -u "$ftp_user" -p "$ftp_pass" $ftp_location $ftp_folder _site/* 
+        ncftpput -R -v -u "$ftp_username" -p "$ftp_password" $ftp_location $ftp_folder _site/* 
