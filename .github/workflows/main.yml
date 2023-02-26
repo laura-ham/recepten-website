@@ -8,16 +8,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: '2.7.5'
         bundler-cache: true
-    # Install the gems in the gemfile & install ncftp
+    # Install the gems in the gemfile & install lftp
     - name: Setup Environment.
       run: |
         bundle install
-        sudo apt-get install -y ncftp
+        sudo apt-get update -qy
+        sudo apt-get install -y lftp
     
     # Build the site
     - name: Build Site with Jekyll.
@@ -31,4 +32,4 @@ jobs:
         ftp_password: ${{ secrets.FTP_PASSWORD }}
         ftp_folder: ${{ secrets.FTP_FOLDER }}
       run: |
-        ncftpput -R -v -u "$ftp_username" -p "$ftp_password" $ftp_location $ftp_folder _site/* 
+        lftp -e "open $ftp_location; set ssl:verify-certificate false; set net:reconnect-interval-base 1; user $ftp_username $ftp_password; mirror -X .* -X .*/ --reverse --verbose --delete _site/ $ftp_folder; bye"

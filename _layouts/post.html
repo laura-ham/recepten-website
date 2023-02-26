@@ -33,10 +33,12 @@ layout: default
 		</div>
 	</div>
 
+	{% if page.recipe.tips_markdown %}
 	<div class="recipe-tips">
 		<h2>Tips & notities</h2>
 		{{ page.recipe.tips_markdown | markdownify }}
 	</div>
+	{% endif %}
 
 	<div class="recipe-body">
 		{{ content }}
