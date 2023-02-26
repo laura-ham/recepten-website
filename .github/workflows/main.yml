@@ -32,4 +32,4 @@ jobs:
         ftp_password: ${{ secrets.FTP_PASSWORD }}
         ftp_folder: ${{ secrets.FTP_FOLDER }}
       run: |
-        lftp -e "open $ftp_location; set ssl:verify-certificate false; set net:reconnect-interval-base 1; set net:timeout 30; user $ftp_username $ftp_password; mirror -X .* -X .*/ --no-umask --reverse --verbose --delete _site/ $ftp_folder; bye"
+        lftp -e "open $ftp_location; set ssl:verify-certificate false; set net:reconnect-interval-base 1; set net:timeout 30; user $ftp_username $ftp_password; mirror -X .* -X .*/ --no-umask --reverse --verbose --delete --parallel=10 _site/ $ftp_folder; bye"
