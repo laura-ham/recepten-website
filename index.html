@@ -13,7 +13,7 @@ title: Home
 
 			<!-- {{ post.recipe.intro_markdown | markdownify | strip_html | truncatewords: 35 }} -->
 			
-			{{ post.recipe.intro_markdown | markdownify <!-- | strip_html --> | truncatewords: 35 }}
+			{{ post.recipe.intro_markdown | markdownify | truncatewords: 35 }}
 
 			<p><a class="button" href="{{ site.baseurl }}{{ post.url }}">Read more</a></p>
 		</article>
