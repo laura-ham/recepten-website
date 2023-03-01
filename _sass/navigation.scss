@@ -22,6 +22,20 @@ nav {
 		text-align: center;
 		position: relative;
 
+		.header-container-image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			// position: absolute;
+			// top: 0;
+			// bottom: 0;
+			// margin: auto;
+	
+			img {
+				vertical-align: middle;
+			}
+		}
+
 		.header-container-links {
 
 			display: inline-block;
@@ -58,20 +72,7 @@ nav {
 	
 	
 
-	.header-container-image {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		// position: absolute;
-		// top: 0;
-		// bottom: 0;
-		// margin: auto;
 
-
-		img {
-			vertical-align: middle;
-		}
-	}
 
 	// .header-container-right {
 	// 	float: right;
