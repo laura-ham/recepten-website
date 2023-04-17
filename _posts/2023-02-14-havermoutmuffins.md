@@ -8,7 +8,7 @@ featured_image: https://source.unsplash.com/xcsIvdTPJJg
 recipe:
   servings: 4 muffins
   prep: 15 minuten
-  cook: 25 minuten op 190 &deg;C
+  cook: 45 minuten op 190 &deg;C
   fridge:
   ingredients_markdown:  |-
     * 60 gram havermout

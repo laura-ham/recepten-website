@@ -16,7 +16,7 @@ recipe:
     * 25 gram honing
     * zout
     * 60 gram kleine pure chocolate chips
-    * 50 gram chocolade druppels puur (70%)
+    * 30 gram chocolade druppels puur (70%)
   tools_markdown: |-
     * bakpapier
     * keukenmachine
